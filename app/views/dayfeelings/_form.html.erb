@@ -1,0 +1,45 @@
+<%= form_for(@dayfeeling) do |f| %>
+  <% if @dayfeeling.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dayfeeling.errors.count, "error") %> prohibited this dayfeeling from being saved:</h2>
+
+      <ul>
+      <% @dayfeeling.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :day %><br />
+    <%= f.date_select :day %>
+  </div>
+  <div class="field">
+    <%= f.label :generalfeeling %><br />
+    <%= f.text_field :generalfeeling %>
+  </div>
+  <div class="field">
+    <%= f.label :feelinglevel %><br />
+    <%= f.text_field :feelinglevel %>
+  </div>
+  <div class="field">
+    <%= f.label :drugconsumption %><br />
+    <%= f.text_field :drugconsumption %>
+  </div>
+  <div class="field">
+    <%= f.label :stresslevel %><br />
+    <%= f.text_field :stresslevel %>
+  </div>
+  <div class="field">
+    <%= f.label :sleep %><br />
+    <%= f.text_field :sleep %>
+  </div>
+  <div class="field">
+    <%= f.label :sport %><br />
+    <%= f.text_field :sport %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

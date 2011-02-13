@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  day: 2011-02-13
+  generalfeeling: MyString
+  feelinglevel: MyString
+  drugconsumption: MyString
+  stresslevel: MyString
+  sleep: MyString
+  sport: MyString
+
+two:
+  day: 2011-02-13
+  generalfeeling: MyString
+  feelinglevel: MyString
+  drugconsumption: MyString
+  stresslevel: MyString
+  sleep: MyString
+  sport: MyString

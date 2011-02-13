@@ -1,0 +1,35 @@
+<h1>Listing dayfeelings</h1>
+
+<table>
+  <tr>
+    <th>Day</th>
+    <th>Generalfeeling</th>
+    <th>Feelinglevel</th>
+    <th>Drugconsumption</th>
+    <th>Stresslevel</th>
+    <th>Sleep</th>
+    <th>Sport</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dayfeelings.each do |dayfeeling| %>
+  <tr>
+    <td><%= dayfeeling.day %></td>
+    <td><%= dayfeeling.generalfeeling %></td>
+    <td><%= dayfeeling.feelinglevel %></td>
+    <td><%= dayfeeling.drugconsumption %></td>
+    <td><%= dayfeeling.stresslevel %></td>
+    <td><%= dayfeeling.sleep %></td>
+    <td><%= dayfeeling.sport %></td>
+    <td><%= link_to 'Show', dayfeeling %></td>
+    <td><%= link_to 'Edit', edit_dayfeeling_path(dayfeeling) %></td>
+    <td><%= link_to 'Destroy', dayfeeling, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dayfeeling', new_dayfeeling_path %>

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Day:</b>
+  <%= @dayfeeling.day %>
+</p>
+
+<p>
+  <b>Generalfeeling:</b>
+  <%= @dayfeeling.generalfeeling %>
+</p>
+
+<p>
+  <b>Feelinglevel:</b>
+  <%= @dayfeeling.feelinglevel %>
+</p>
+
+<p>
+  <b>Drugconsumption:</b>
+  <%= @dayfeeling.drugconsumption %>
+</p>
+
+<p>
+  <b>Stresslevel:</b>
+  <%= @dayfeeling.stresslevel %>
+</p>
+
+<p>
+  <b>Sleep:</b>
+  <%= @dayfeeling.sleep %>
+</p>
+
+<p>
+  <b>Sport:</b>
+  <%= @dayfeeling.sport %>
+</p>
+
+
+<%= link_to 'Edit', edit_dayfeeling_path(@dayfeeling) %> |
+<%= link_to 'Back', dayfeelings_path %>
