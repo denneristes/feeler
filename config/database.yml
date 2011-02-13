@@ -16,7 +16,7 @@ test:
   password: feeler
 
 production:
-  adapter: mysql
-  database: feeler_dev
+  adapter: mysql2
+  database: feeler_prod
   username: feeler
   password: feeler
